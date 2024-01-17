@@ -11,7 +11,7 @@ axios
 .get("https://itp-bdd-cgge-01.000webhostapp.com/php-geoip-api/index.php")
   .then(function (response) {
     // manejar respuesta exitosa
-    console.log (response.data.ip);
+    console.log (response.data);
     ip.innerHTML = response.data.ip;
     pais.innerHTML = response.data.pais;
     continente.innerHTML = response.data.continente;
